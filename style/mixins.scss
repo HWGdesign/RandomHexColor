@@ -1,0 +1,23 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexLeft {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+@mixin gridCenter {
+  display: grid;
+  place-content: center;
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
