@@ -13,31 +13,37 @@
 }
 
 body {
-  background-color: blue;
+  background-color: rgb(255, 255, 255);
 }
 
 #container {
   @include absoluteCenter;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  height: 200px;
+  height: 150px;
+  width: 250px;
 }
-
-//! TOP
 
 #top,
 #bottom {
   @include gridCenter;
+  width: 100%;
 }
 
 #top {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 5fr 1fr;
+  gap: 1rem;
   .input,
   .copy {
     @include gridCenter;
-    font-family: "Red Hat Text", sans-serif;
   }
+}
+
+#bottom button.buttonJS {
+  @include gridCenter;
+  width: 250px;
+  background-color: $dark;
 }
 
 .InputContainer {
@@ -49,8 +55,59 @@ body {
   }
 }
 
-//! BOTTOM
+button,
+input {
+  font-family: "Red Hat Text", sans-serif;
+  height: 3rem;
+  width: 100%;
+  font-size: 0.9rem;
+}
 
-button {
-  background-color: blue;
+.copy button {
+  background-color: transparent;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  border-radius: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: $dark;
+  cursor: pointer;
+  box-shadow: $box-shadow;
+}
+
+.copy button:hover,
+input:hover,
+.buttonJS button:hover {
+  box-shadow: $box-shadow2;
+  background-color: $grey-light;
+}
+
+.copy button:active,
+.buttonJS button:active {
+  background-color: $grey;
+}
+
+input {
+  display: flex;
+  text-align: center;
+  border: none;
+  border-radius: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: $dark;
+  box-shadow: $box-shadow;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.buttonJS button {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 250px;
+  border-radius: 0.75rem;
+  color: $dark;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: $box-shadow;
 }
