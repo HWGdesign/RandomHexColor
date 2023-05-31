@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  font-family: "Red Hat Text", sans-serif;
 }
 
 #container {
@@ -17,70 +17,79 @@ body {
   top: 50%;
   left: 50%;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  height: 150px;
+  grid-template-rows: repeat(3, 1fr);
+  height: 200px;
   width: 250px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+  padding: 10px 20px;
+  border-radius: 15px;
 }
 
 #top,
 #bottom {
   display: grid;
   place-content: center;
-  width: 100%;
+}
+
+header {
+  display: grid;
+  place-content: center;
+  font-size: 14px;
+  color: #191923;
 }
 
 #top {
   display: grid;
   grid-template-columns: 5fr 1fr;
-  gap: 1rem;
-}
-#top .input,
-#top .copy {
-  display: grid;
-  place-content: center;
 }
 
-#bottom button.buttonJS {
-  display: grid;
-  place-content: center;
-  width: 250px;
-  background-color: #191923;
+.inputJS {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  width: 210px;
+  height: 40px;
 }
 
-.InputContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 100px);
-}
-.InputContainer .input,
-.InputContainer .copy {
-  display: grid;
-  place-content: center;
+.copy {
+  display: flex;
+  text-align: right;
+  align-items: center;
+  width: 40px;
+  height: 40px;
 }
 
 button,
-input {
-  font-family: "Red Hat Text", sans-serif;
-  height: 3rem;
+h1 {
+  height: 100%;
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 15px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
 }
 
 .copy button {
   background-color: transparent;
-  height: 3rem;
-  width: 3rem;
+  height: 40px;
+  width: 40px;
   border: none;
-  border-radius: 0.75rem;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.85);
   color: #191923;
   cursor: pointer;
-  box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.1);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
 }
 
 .copy button:hover,
 input:hover,
 .buttonJS button:hover {
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05), inset 0px 0px 0px 1px rgb(209, 213, 219);
   background-color: #fdfdfd;
 }
 
@@ -89,14 +98,14 @@ input:hover,
   background-color: #e9ecec;
 }
 
-input {
+h1 {
   display: flex;
   text-align: center;
   border: none;
-  border-radius: 0.75rem;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.85);
   color: #191923;
-  box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.1);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
 }
 
 textarea:focus,
@@ -107,10 +116,11 @@ input:focus {
 .buttonJS button {
   background-color: rgba(255, 255, 255, 0.85);
   width: 250px;
-  border-radius: 0.75rem;
+  height: 40px;
+  border-radius: 10px;
   color: #191923;
   border: none;
   outline: none;
   cursor: pointer;
-  box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.1);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
 }/*# sourceMappingURL=style.css.map */

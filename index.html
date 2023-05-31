@@ -9,19 +9,23 @@
   </head>
   <body>
     <main id="container">
-      <!-- HEX code, Copy button -->
+      <header>
+        <h2>HEX Color generator</h2>
+      </header>
       <div id="top">
         <div class="inputJS">
-          <input type="text" title="HEX Color Code" value="#FFFFFF" />
+          <h1 id="hexCode" title="HEX Color Code">#000000</h1>
         </div>
         <div class="copy">
-          <button title="Copy"><i class="bi bi-clipboard"></i></button>
+          <button title="Copy" onclick="copyElementText('hexCode')">
+            <i class="bi bi-clipboard"></i>
+          </button>
         </div>
       </div>
-      <!-- CreateRandomColor Button -->
+
       <div id="bottom">
         <div class="buttonJS">
-          <button>Generate random color</button>
+          <button onclick="changeColor()">Generate random color</button>
         </div>
       </div>
     </main>

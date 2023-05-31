@@ -10,6 +10,12 @@
   align-items: center;
 }
 
+@mixin flexRight {
+  display: flex;
+  text-align: right;
+  align-items: center;
+}
+
 @mixin gridCenter {
   display: grid;
   place-content: center;
