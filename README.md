@@ -1,6 +1,9 @@
 ## PROJECT: HEX color generator
 This is a simple web application that allows you to generate ramdom HEX color instantly. 
 
+![hex](https://github.com/HWGdesign/RandomHexColor/assets/132587901/9ef2e36d-b118-4306-9bd5-503acd52fb28)
+
+
 ### Usage:
 <ol>
 <li>Open the web application in your preferred web browser.<br>
@@ -8,6 +11,8 @@ This is a simple web application that allows you to generate ramdom HEX color in
 <li>Click the "Copy" button to copy hex code to clipboard,<br>
 <li>The generated HEX color will be displayed on web background.
 </ol>
+
+
   
 ### Code with:
 [![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
